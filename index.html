@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="src/css/footer.css">
 
 
-    <link rel="shortcut icon" href="src/imagens/logo-web2.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/src/imagens/icon.png" type="image/x-icon">
 
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -19,71 +19,82 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
-
-
+    <script type="text/javascript" src="/src/js/script.js"></script>
 </head>
 
 <body>
     <header>
-
         <a href="index.html" class="logo"><span>Lanchonete Senai</span></a>
         <ul class="navbar">
-            <li><a href="index.html">Menu</a></li>
-            <li><a href="sobre.html">Carrinho</a></li>
+            <a href="comanda.html" class="add-to-cart" type="button">Criar comanda</button></a>
         </ul>
-        <div class="main">
-            <a href="#" class="user" id="linkLog"><i class="ri-user-fill"></i>Login</a>
-            <a href="#" id="linkReg">Registre-se</a>
-            <div class="bx bx-menu" id="menu-icon"></div>
-        </div>
-
     </header>
     <div class="box">
         <a name="menu"></a>
-        <a href="">
+        <a href="#">
             <div class="card white">
                 <h2>Coxinha</h2>
                 <p>Sabor frango e carne</p>
                 <p>R$ 5,00</p>
-                <img class="image" src="src/imagens/coxinha.png">
+
+                <div class="quantity">
+                    <a href=#">Quantidade: </a><input id="cox" type="number" min="0" max="99" value="0">
+                    <button class="add-to-cart" onclick="addItem('Coxinha', 'cox')"> Add Pedido</button>
+                </div>
             </div>
         </a>
-        <a href="">
+        <a href="#">
             <div class="card white">
                 <h2>Biscoito</h2>
                 <p>Sabor chocolate e baunilha.</p>
                 <p>R$ 4,00</p>
-                <img class="image" src="src/imagens/biscoito.png">
+
+                <div class="quantity">
+                    <a href="#">Quantidade: </a><input id="bis" type="number" min="0" max="99" value="0">
+                    <button class="add-to-cart" onclick="addItem('Biscoito', 'bis')"> Add Pedido</button>
+                </div>
             </div>
         </a>
-        <a href="">
+        <a href="#">
             <div class="card white">
                 <h2>Hamburguer</h2>
                 <p>Pão, carne, queijo e presunto.</p>
                 <p>R$ 7,00</p>
-                <img class="image" src="src/imagens/hambuerguer.png">
+
+                <div class="quantity">
+                    <a href="#">Quantidade: </a><input id="ham" type="number" min="0" max="99" value="0">
+                    <button class="add-to-cart" onclick="addItem('Hamburguer', 'ham')"> Add Pedido</button>
+                </div>
             </div>
         </a>
-        <a href="">
+        <a href="#">
             <div class="card white">
                 <h2>Picolé</h2>
                 <p>Sabores chocolate, morango e creme.</p>
                 <p>R$ 3,00</p>
-                <img class="image" src="src/imagens/picole.png">
+
+                <div class="quantity">
+                    <a href="#">Quantidade: </a><input id="pic" type="number" min="0" max="99" value="0">
+                    <button class="add-to-cart" onclick="addItem('Picolé', 'pic')"> Add Pedido</button>
+                </div>
             </div>
         </a>
-        <a href="">
+        <a href="#">
             <div class="card white">
                 <h2>Refrigerante</h2>
-                <p>Coca-Cola, Fanta e Guarana.</p>
+                <p>Coca-Cola, Fanta e Guarana. 600ml</p>
                 <p>R$ 6,00</p>
-                <img class="image" src="src/imagens/refri.png">
+
+                <div class="quantity">
+                    <a href="#">Quantidade: </a><input id="refri" type="number" min="0" max="99" value="0">
+                    <button class="add-to-cart" onclick="addItem('Regrigerante', 'refri')"> Add Pedido</button>
+                </div>
             </div>
         </a>
     </div>
 
     <!--Js-->
-    <script type="text/javascript" src="src/js/script.js"></script>
+
 </body>
 
 

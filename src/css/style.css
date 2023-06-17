@@ -206,11 +206,6 @@ logo{
     margin: 20px;
     transition: all 0.3s ease-out;
 }
-.card:hover 
-{
-    transform: translateY(-5px);
-    cursor: pointer;
-}
 .card p
 {
     color: #000000;
@@ -229,3 +224,28 @@ logo{
 {
     border-left: 5px solid #005cAA;
 }
+.quantity {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .quantity input {
+    width: 60px;
+    text-align: center;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+  }
+  
+  .add-to-cart {
+    background-color: #2280d9;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #46627b;
+  }
