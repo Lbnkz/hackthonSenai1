@@ -26,7 +26,7 @@
     <header>
         <a href="index.html" class="logo"><span>Lanchonete Senai</span></a>
         <ul class="navbar">
-            <a href="comanda.html" class="add-to-cart" type="button">Criar comanda</button></a>
+            <a href="#" class="add-to-cart finish" onclick="exibirObjeto()" type="button">Finalizar</button></a>
         </ul>
     </header>
     <div class="box">
@@ -35,11 +35,11 @@
             <div class="card white">
                 <h2>Coxinha</h2>
                 <p>Sabor frango e carne</p>
-                <p>R$ 5,00</p>
+                <p id="vlr">R$ 5,00</p>
 
                 <div class="quantity">
                     <a href=#">Quantidade: </a><input id="cox" type="number" min="0" max="99" value="0">
-                    <button class="add-to-cart" onclick="addItem('Coxinha', 'cox')"> Add Pedido</button>
+                    <button class="add-to-cart" onclick="addItem('Coxinha', 'cox', 'vlr')"> Add Pedido</button>
                 </div>
             </div>
         </a>
@@ -47,11 +47,11 @@
             <div class="card white">
                 <h2>Biscoito</h2>
                 <p>Sabor chocolate e baunilha.</p>
-                <p>R$ 4,00</p>
+                <p id="vlr">R$ 4,00</p>
 
                 <div class="quantity">
                     <a href="#">Quantidade: </a><input id="bis" type="number" min="0" max="99" value="0">
-                    <button class="add-to-cart" onclick="addItem('Biscoito', 'bis')"> Add Pedido</button>
+                    <button class="add-to-cart" onclick="addItem('Biscoito', 'bis', 'vlr')"> Add Pedido</button>
                 </div>
             </div>
         </a>
@@ -59,11 +59,11 @@
             <div class="card white">
                 <h2>Hamburguer</h2>
                 <p>Pão, carne, queijo e presunto.</p>
-                <p>R$ 7,00</p>
+                <p id="vlr">R$ 7,00</p>
 
                 <div class="quantity">
                     <a href="#">Quantidade: </a><input id="ham" type="number" min="0" max="99" value="0">
-                    <button class="add-to-cart" onclick="addItem('Hamburguer', 'ham')"> Add Pedido</button>
+                    <button class="add-to-cart" onclick="addItem('Hamburguer', 'ham', 'vlr')"> Add Pedido</button>
                 </div>
             </div>
         </a>
@@ -71,11 +71,11 @@
             <div class="card white">
                 <h2>Picolé</h2>
                 <p>Sabores chocolate, morango e creme.</p>
-                <p>R$ 3,00</p>
+                <p id="vlr">R$ 3,00</p>
 
                 <div class="quantity">
                     <a href="#">Quantidade: </a><input id="pic" type="number" min="0" max="99" value="0">
-                    <button class="add-to-cart" onclick="addItem('Picolé', 'pic')"> Add Pedido</button>
+                    <button class="add-to-cart" onclick="addItem('Picolé', 'pic', 'vlr')"> Add Pedido</button>
                 </div>
             </div>
         </a>
@@ -83,19 +83,15 @@
             <div class="card white">
                 <h2>Refrigerante</h2>
                 <p>Coca-Cola, Fanta e Guarana. 600ml</p>
-                <p>R$ 6,00</p>
+                <p id="vlr">R$ 6,00</p>
 
                 <div class="quantity">
                     <a href="#">Quantidade: </a><input id="refri" type="number" min="0" max="99" value="0">
-                    <button class="add-to-cart" onclick="addItem('Regrigerante', 'refri')"> Add Pedido</button>
+                    <button class="add-to-cart" onclick="addItem('Refrigerante', 'refri', 'vlr')"> Add Pedido</button>
                 </div>
             </div>
         </a>
     </div>
 
-    <!--Js-->
-
 </body>
-
-
 </html>
